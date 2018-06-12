@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#333333"
+    android:weightSum="1"
+    tools:context=".PreviewActivity">
+
+
+    <LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="50dp"
+    android:layout_gravity="center"
+    android:layout_marginTop="50px"
+    android:layout_marginBottom="50px"
+    android:layout_marginLeft="10px"
+    android:layout_marginRight="10px"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Preview"
+        android:gravity="center"
+        android:textColor="#ccffffff"
+        android:textSize="45dp"
+        android:fontFamily="roboto"
+        android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <ImageView
+    android:id="@+id/imagePreview"
+    android:layout_width="wrap_content"
+    android:layout_height="314dp"
+    android:src="@drawable/quad3"
+    android:layout_marginRight="150px"
+    android:layout_marginLeft="150px" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#333333"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/tick"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:backgroundTint="#333333"
+            android:contentDescription="@string/tick"
+            android:scaleType="fitXY"
+            android:src="@drawable/ok" />
+
+        <ImageButton
+            android:id="@+id/modifica"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:scaleType="fitXY"
+
+
+            android:backgroundTint="#333333"
+            android:contentDescription="@string/modify"
+            android:src="@drawable/modifica" />
+
+    </LinearLayout>
+
+</LinearLayout>
